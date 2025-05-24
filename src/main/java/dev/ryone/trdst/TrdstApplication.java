@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class TrdstApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(TrdstApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(TrdstApplication.class, args);
+    }
 }
