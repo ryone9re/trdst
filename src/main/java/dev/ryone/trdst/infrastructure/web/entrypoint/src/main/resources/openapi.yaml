@@ -1,0 +1,36 @@
+openapi: 3.1.0
+info:
+  title: Root Service
+  version: 0.0.0
+servers:
+- url: /
+tags:
+- name: Root::Service
+paths:
+  /get:
+    get:
+      operationId: Service_get
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+          description: The request has succeeded.
+      tags:
+      - Root::Service
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Root::Service
+components:
+  schemas:
+    Response:
+      example:
+        message: message
+      properties:
+        message:
+          type: string
+      required:
+      - message
